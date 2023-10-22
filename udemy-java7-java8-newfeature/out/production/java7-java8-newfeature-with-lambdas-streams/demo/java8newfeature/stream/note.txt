@@ -1,0 +1,37 @@
+STREAM
+khi chúng tôi làm việc với các Streams, chúng tôi thiết lập một quy trình hoạt động trong các giai đoạn khác nhau như được đề cập bên dưới
+1. Tạo Stream bằng stream() , parallelStream() hoặc Stream.of ()
+2. Một hoặc nhiều thao tác trung gian để chuyển đổi Stream ban đầu thành Stream khác hoặc lọc, v.v.
+3. Áp dụng một hoạt động đầu cuối để tạo ra một kết quả.
+Bên trong java.util.Array các phương thức static mới đã được thêm vào để chuyển đổi một array thành một stream,
+. Arrays.stream(array) - để tạo một Stream từ một array
+. Arrays.stream(array, from, to) - để tạo Stream a từ một phần của array.
+Để tạo một stream empty không có phần tử, chúng ta có thể sử dụng phương thức empty() bên trong lớp Stream.
+. Stream<String> emptyStream = Stream.empty();
+Để tạo ra một dòng vô hạn các phần tử elelements phù hợp với dòng các phần tử ngẫu nhiên, Stream có 2 phương thức static được gọi là Stream.generate() & Stream.iterate().
+
+- Intermediate Operations
+filter()
+map()
+flatMap()
+distinct()
+sorted()
+peek()
+limit()
+skip()
+
+- Terminal Operations
+forEach()
+forEachOrdered()
+toArray()
+reduce()
+collect()
+min()
+max()
+count()
+anyMatch()
+allMatch()
+noneMatch()
+findFirst()
+findAny()
+
